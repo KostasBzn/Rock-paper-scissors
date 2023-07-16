@@ -1,4 +1,4 @@
-My first small game using HTML and CSS and JavaScript
+My first small game using HTML and CSS and JavaScript ----STILL IN PROGRESS----
 
 Rock-paper-scissors
 
