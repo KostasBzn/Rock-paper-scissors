@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #191919;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: lightgray;
+}
+
+.title {
+  background: linear-gradient(#5d3fd3, #3f00ff, #5d3fd3);
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.rock_but {
+  background-color: #191919;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: url(./img/rock.png) no-repeat;
+  background-size: 45px;
+  background-position: center center;
+}
+
+.paper_but {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: url(./img/paper.png) no-repeat;
+  background-size: 45px;
+  background-position: center center;
+}
+
+.scissors_but {
+  background-color: #191919;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: url(./img/scissor.png) no-repeat;
+  background-size: 28px;
+  background-position: center center;
+}
+
+.play_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.but_active:active {
+  scale: 0.95;
+}
+
+.reset_but {
+  background-color: tomato;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px lightgray;
+  font-weight: bolder;
+}
+
+.reset_but:active {
+  scale: 0.95;
+  box-shadow: 0 0 7px lightgray;
+}
+
+.reset_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
