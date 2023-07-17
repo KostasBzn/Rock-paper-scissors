@@ -97,3 +97,44 @@ h2 {
   justify-content: center;
   margin-top: 30px;
 }
+
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 40px;
+}
+
+.wins_box,
+.looses_box,
+.ties_box {
+  border: 2px solid #c9fb04;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.box_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.score_containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score h3 {
+  color: #c9fb04;
+  font-size: 1.4rem;
+}
+
+.score h4 {
+  color: #c9fb04;
+  font-weight: lighter;
+}

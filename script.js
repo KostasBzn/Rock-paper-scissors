@@ -57,6 +57,10 @@ function playGame(playerMove) {
 
   localStorage.setItem("score", JSON.stringify(score));
 
+  document.getElementById("my_wins").innerHTML = score.wins;
+  document.getElementById("my_looses").innerHTML = score.looses;
+  document.getElementById("my_ties").innerHTML = score.ties;
+
   alert(
     `You picked ${playerMove}. Computer picked ${computerMove}. ${result}.
 Wins: ${score.wins} Looses: ${score.looses} Ties: ${score.ties}`
