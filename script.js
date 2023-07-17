@@ -2,6 +2,12 @@ let score = JSON.parse(localStorage.getItem("score"));
 
 console.log(localStorage.getItem("score"));
 
+function allZero() {
+  document.getElementById("my_wins").innerHTML = 0;
+  document.getElementById("my_looses").innerHTML = 0;
+  document.getElementById("my_ties").innerHTML = 0;
+}
+
 function resetScore() {
   score.wins = 0;
   score.looses = 0;
