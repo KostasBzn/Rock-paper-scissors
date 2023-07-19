@@ -1,5 +1,6 @@
 let score = JSON.parse(localStorage.getItem("score"));
 
+//i get the item from the local storage with .getItem(name i gave to .setItem)
 console.log(localStorage.getItem("score"));
 
 function allZero() {
@@ -61,6 +62,8 @@ function playGame(playerMove) {
     score.ties += 1;
   }
 
+  // Save the score to local storage .setItem(name of item i want to access later, what i want to store. Only support strings. I save it as a string)
+  // JSON.stringify --> to convert it to a string because localStorage accepts only strings
   localStorage.setItem("score", JSON.stringify(score));
 
   document.getElementById("my_wins").innerHTML = score.wins;
