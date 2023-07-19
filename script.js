@@ -1,14 +1,18 @@
+// convert the score into object again with JSON.parse getting it
+// from the local storage with .getItem(name i gave to .setItem)
 let score = JSON.parse(localStorage.getItem("score"));
 
 //i get the item from the local storage with .getItem(name i gave to .setItem)
 console.log(localStorage.getItem("score"));
 
+// prin 0 to h3 on click reset button
 function allZero() {
   document.getElementById("my_wins").innerHTML = 0;
   document.getElementById("my_looses").innerHTML = 0;
   document.getElementById("my_ties").innerHTML = 0;
 }
 
+// set score to 0 ( and remove it from localStorage)
 function resetScore() {
   score.wins = 0;
   score.looses = 0;
@@ -54,6 +58,7 @@ function playGame(playerMove) {
     }
   }
 
+  // add the result to score
   if (result === "You win") {
     score.wins += 1;
   } else if (result === "You lose") {
@@ -66,6 +71,7 @@ function playGame(playerMove) {
   // JSON.stringify --> to convert it to a string because localStorage accepts only strings
   localStorage.setItem("score", JSON.stringify(score));
 
+  // print score to h3
   document.getElementById("my_wins").innerHTML = score.wins;
   document.getElementById("my_looses").innerHTML = score.looses;
   document.getElementById("my_ties").innerHTML = score.ties;
