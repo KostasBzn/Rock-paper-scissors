@@ -1,4 +1,4 @@
-// convert the score into object again with JSON.parse getting it
+// i convert the score into object again with JSON.parse getting it
 // from the local storage with .getItem(name i gave to .setItem)
 let score = JSON.parse(localStorage.getItem("score"));
 
