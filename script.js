@@ -12,7 +12,7 @@ function allZero() {
   document.getElementById("my_ties").innerHTML = 0;
 }
 
-// set score to 0 ( and remove it from localStorage)
+// set score to 0 on click ( and remove it from localStorage)
 function resetScore() {
   score.wins = 0;
   score.looses = 0;
