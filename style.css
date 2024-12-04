@@ -22,11 +22,11 @@ header {
 }
 
 h2 {
-  color: lightgray;
+  color: rgb(233, 214, 214);
 }
 
 .title {
-  background: linear-gradient(#5d3fd3, #3f00ff, #5d3fd3);
+  background: linear-gradient(#5d3fd3, #4000ff4d, #5d3fd3);
   width: fit-content;
   padding: 10px 20px;
   border-radius: 30px;
